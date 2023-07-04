@@ -1,0 +1,13 @@
+# CI/CD pipeline for GetSPUserID task development
+
+jobs:
+- job: Publish_GetSPUserID_Task
+  displayName: Publish GetSPUserID Task
+  pool:
+    vmImage: 'windows-latest'
+  steps:
+
+  - task: TfxInstaller@4
+    inputs:
+      version: 'v0.x'
+    
